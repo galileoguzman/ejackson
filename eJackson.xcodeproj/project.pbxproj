@@ -13,7 +13,6 @@
 		F20AED071FC328B6000AAA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20AED061FC328B6000AAA65 /* Assets.xcassets */; };
 		F20AED0A1FC328B6000AAA65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20AED081FC328B6000AAA65 /* LaunchScreen.storyboard */; };
 		F20AED0D1FC328B6000AAA65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED0C1FC328B6000AAA65 /* main.m */; };
-		F20AED191FC32AE9000AAA65 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED181FC32AE9000AAA65 /* Start.m */; };
 		F20AED1C1FC32DBB000AAA65 /* ListJacksonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED1B1FC32DBB000AAA65 /* ListJacksonVC.m */; };
 		F20AED201FC346E1000AAA65 /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED1F1FC346E1000AAA65 /* WebServices.m */; };
 		F20AED251FC34914000AAA65 /* ArtistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED241FC34914000AAA65 /* ArtistModel.m */; };
@@ -32,8 +31,6 @@
 		F20AED091FC328B6000AAA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F20AED0B1FC328B6000AAA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F20AED0C1FC328B6000AAA65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F20AED171FC32AE9000AAA65 /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
-		F20AED181FC32AE9000AAA65 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		F20AED1A1FC32DBB000AAA65 /* ListJacksonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListJacksonVC.h; sourceTree = "<group>"; };
 		F20AED1B1FC32DBB000AAA65 /* ListJacksonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListJacksonVC.m; sourceTree = "<group>"; };
 		F20AED1E1FC346E1000AAA65 /* WebServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
@@ -113,8 +110,6 @@
 		F20AED141FC329BE000AAA65 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F20AED171FC32AE9000AAA65 /* Start.h */,
-				F20AED181FC32AE9000AAA65 /* Start.m */,
 				F20AED1A1FC32DBB000AAA65 /* ListJacksonVC.h */,
 				F20AED1B1FC32DBB000AAA65 /* ListJacksonVC.m */,
 			);
@@ -312,7 +307,6 @@
 				F20AED361FC34D14000AAA65 /* CardCell.m in Sources */,
 				F20AED1C1FC32DBB000AAA65 /* ListJacksonVC.m in Sources */,
 				F20AED201FC346E1000AAA65 /* WebServices.m in Sources */,
-				F20AED191FC32AE9000AAA65 /* Start.m in Sources */,
 				F20AED0D1FC328B6000AAA65 /* main.m in Sources */,
 				F20AECFF1FC328B6000AAA65 /* AppDelegate.m in Sources */,
 			);
