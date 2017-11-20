@@ -1,0 +1,24 @@
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+#
+# CocoaPods
+#
+
+Pods/
+
+#
+# OSX Files
+#
+
+*.DS_Store
