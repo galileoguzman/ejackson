@@ -6,8 +6,11 @@
 //  Copyright © 2017 Galileo Guzman. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface WebServices : NSObject
+#import "ArtistModel.h"
 
+@interface WebServices : NSObject
++ (void)getJacksonWithCompletionHandler:(void (^)(NSMutableArray *response)) handler;
 @end
