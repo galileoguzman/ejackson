@@ -38,16 +38,12 @@
     [self.tblContent addSubview:self.refreshTableControl];
     [self.refreshTableControl addTarget:self action:@selector(refreshTableView) forControlEvents:UIControlEventValueChanged];
     
-    [self setupNavigationBar];
-    
     self.songs = [[NSMutableArray alloc] init];
     
     [self queueLoadData];
     
 }
--(void)setupNavigationBar{
-    [self.tblContent setContentInset:UIEdgeInsetsMake(self.navigationController.navigationBar.frame.size.height,0,0,0)];
-}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -56,13 +52,13 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"segueDetailArticle"]) {
+    if ([[segue identifier] isEqualToString:@"segueDetailSong"]) {
         
-//        // Get destination view
-//        DeatilNewController *vc = [segue destinationViewController];
-//
-//        // Pass the information to your destination view
-//        [vc setArticle:self.articleSelected];
+        // Get destination view
+        DetailSongVC *vc = [segue destinationViewController];
+
+        // Pass the information to your destination view
+        [vc setSong:self.songSelected];
     }
 }
 
@@ -176,8 +172,8 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    self.articleSelected = self.news[indexPath.row];
-//    [self performSegueWithIdentifier:@"segueDetailArticle" sender:self];
+    self.songSelected = self.songs[indexPath.row];
+    [self performSegueWithIdentifier:@"segueDetailSong" sender:self];
 }
 
 - (void)scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated{

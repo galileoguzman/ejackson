@@ -18,6 +18,7 @@
 		F20AED251FC34914000AAA65 /* ArtistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED241FC34914000AAA65 /* ArtistModel.m */; };
 		F20AED361FC34D14000AAA65 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED341FC34D14000AAA65 /* CardCell.m */; };
 		F20AED371FC34D14000AAA65 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20AED351FC34D14000AAA65 /* CardCell.xib */; };
+		F20AED3A1FC3584D000AAA65 /* DetailSongVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED391FC3584D000AAA65 /* DetailSongVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		F20AED331FC34D14000AAA65 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
 		F20AED341FC34D14000AAA65 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
 		F20AED351FC34D14000AAA65 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		F20AED381FC3584D000AAA65 /* DetailSongVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailSongVC.h; sourceTree = "<group>"; };
+		F20AED391FC3584D000AAA65 /* DetailSongVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailSongVC.m; sourceTree = "<group>"; };
 		FBFC93F1B765D9992B9FBADC /* Pods-eJackson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eJackson.release.xcconfig"; path = "Pods/Target Support Files/Pods-eJackson/Pods-eJackson.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +115,8 @@
 			children = (
 				F20AED1A1FC32DBB000AAA65 /* ListJacksonVC.h */,
 				F20AED1B1FC32DBB000AAA65 /* ListJacksonVC.m */,
+				F20AED381FC3584D000AAA65 /* DetailSongVC.h */,
+				F20AED391FC3584D000AAA65 /* DetailSongVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				F20AED1C1FC32DBB000AAA65 /* ListJacksonVC.m in Sources */,
 				F20AED201FC346E1000AAA65 /* WebServices.m in Sources */,
 				F20AED0D1FC328B6000AAA65 /* main.m in Sources */,
+				F20AED3A1FC3584D000AAA65 /* DetailSongVC.m in Sources */,
 				F20AECFF1FC328B6000AAA65 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

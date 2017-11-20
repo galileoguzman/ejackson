@@ -12,6 +12,7 @@
 
 #import "ArtistModel.h"
 #import "CardCell.h"
+#import "DetailSongVC.h"
 
 @interface ListJacksonVC : UIViewController<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tblContent;

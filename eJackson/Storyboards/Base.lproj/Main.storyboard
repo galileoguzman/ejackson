@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kohinoor.ttc">
+            <string>KohinoorDevanagari-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="rjE-uF-KOS">
@@ -22,6 +28,7 @@
                         <color key="barTintColor" red="0.28624938909999997" green="0.65320313590000001" blue="0.81071891190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -61,11 +68,66 @@
                     <navigationItem key="navigationItem" title="M Jackson" id="Cco-VJ-F6O"/>
                     <connections>
                         <outlet property="tblContent" destination="nq4-5E-Pct" id="nME-0w-vNr"/>
+                        <segue destination="rzZ-mU-vNZ" kind="push" identifier="segueDetailSong" id="OMF-9I-4z8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zmb-cH-Sfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1820" y="116.49175412293854"/>
+        </scene>
+        <!--Detail SongVC-->
+        <scene sceneID="j33-iE-MYj">
+            <objects>
+                <viewController id="rzZ-mU-vNZ" customClass="DetailSongVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vHx-cu-Xmp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFs-3o-xIl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="268"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="008-i3-ocH">
+                                <rect key="frame" x="16" y="353" width="343" height="47"/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="26"/>
+                                <color key="textColor" red="0.38126172624985338" green="0.40304624728554672" blue="0.41086463730569944" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqu-jC-feB">
+                                <rect key="frame" x="16" y="408" width="343" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="vcd-OF-wnv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="22"/>
+                                <color key="textColor" red="0.65734780387905756" green="0.69490732290611501" blue="0.70838730569948183" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mqu-jC-feB" firstAttribute="top" secondItem="008-i3-ocH" secondAttribute="bottom" constant="8" symbolic="YES" id="DPg-T4-qoA"/>
+                            <constraint firstItem="YLE-ic-Sm0" firstAttribute="bottom" secondItem="Mqu-jC-feB" secondAttribute="bottom" constant="201" id="NsI-5i-TAG"/>
+                            <constraint firstItem="008-i3-ocH" firstAttribute="top" secondItem="pFs-3o-xIl" secondAttribute="bottom" constant="21" id="SBL-7s-Tln"/>
+                            <constraint firstItem="008-i3-ocH" firstAttribute="centerX" secondItem="pFs-3o-xIl" secondAttribute="centerX" id="WL3-4N-CmK"/>
+                            <constraint firstItem="pFs-3o-xIl" firstAttribute="top" secondItem="YLE-ic-Sm0" secondAttribute="top" id="c3q-xe-8py"/>
+                            <constraint firstItem="Mqu-jC-feB" firstAttribute="leading" secondItem="vHx-cu-Xmp" secondAttribute="leadingMargin" id="fuc-kQ-2y1"/>
+                            <constraint firstItem="Mqu-jC-feB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="008-i3-ocH" secondAttribute="leading" id="htb-Hc-dlo"/>
+                            <constraint firstItem="pFs-3o-xIl" firstAttribute="leading" secondItem="vHx-cu-Xmp" secondAttribute="leading" id="jqj-fw-3nN"/>
+                            <constraint firstItem="YLE-ic-Sm0" firstAttribute="trailing" secondItem="pFs-3o-xIl" secondAttribute="trailing" id="rgP-Ao-Y8f"/>
+                            <constraint firstItem="Mqu-jC-feB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="008-i3-ocH" secondAttribute="trailing" id="v6f-Iv-65C"/>
+                            <constraint firstItem="YLE-ic-Sm0" firstAttribute="bottom" secondItem="pFs-3o-xIl" secondAttribute="bottom" constant="335" id="w8v-ck-1wF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YLE-ic-Sm0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1ZT-0G-KNW"/>
+                    <connections>
+                        <outlet property="imgSong" destination="pFs-3o-xIl" id="tr6-AO-TRa"/>
+                        <outlet property="lblArtist" destination="008-i3-ocH" id="BsS-VR-odK"/>
+                        <outlet property="lblSong" destination="Mqu-jC-feB" id="64K-yt-pGH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4QI-wJ-hQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757.5999999999999" y="116.49175412293854"/>
         </scene>
     </scenes>
 </document>
