@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6FB1B1A6B1F0104F78BEAE /* libPods-eJackson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FBF86D19B6C66119CF1D9E /* libPods-eJackson.a */; };
 		F20AECFF1FC328B6000AAA65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AECFE1FC328B6000AAA65 /* AppDelegate.m */; };
 		F20AED051FC328B6000AAA65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20AED031FC328B6000AAA65 /* Main.storyboard */; };
 		F20AED071FC328B6000AAA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20AED061FC328B6000AAA65 /* Assets.xcassets */; };
@@ -14,9 +15,15 @@
 		F20AED0D1FC328B6000AAA65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED0C1FC328B6000AAA65 /* main.m */; };
 		F20AED191FC32AE9000AAA65 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED181FC32AE9000AAA65 /* Start.m */; };
 		F20AED1C1FC32DBB000AAA65 /* ListJacksonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED1B1FC32DBB000AAA65 /* ListJacksonVC.m */; };
+		F20AED201FC346E1000AAA65 /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED1F1FC346E1000AAA65 /* WebServices.m */; };
+		F20AED251FC34914000AAA65 /* ArtistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED241FC34914000AAA65 /* ArtistModel.m */; };
+		F20AED361FC34D14000AAA65 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F20AED341FC34D14000AAA65 /* CardCell.m */; };
+		F20AED371FC34D14000AAA65 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20AED351FC34D14000AAA65 /* CardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68FBF86D19B6C66119CF1D9E /* libPods-eJackson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eJackson.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDFD80BEAC971E73AAFFC6B /* Pods-eJackson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eJackson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eJackson/Pods-eJackson.debug.xcconfig"; sourceTree = "<group>"; };
 		F20AECFA1FC328B6000AAA65 /* eJackson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eJackson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20AECFD1FC328B6000AAA65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F20AECFE1FC328B6000AAA65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +36,14 @@
 		F20AED181FC32AE9000AAA65 /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		F20AED1A1FC32DBB000AAA65 /* ListJacksonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListJacksonVC.h; sourceTree = "<group>"; };
 		F20AED1B1FC32DBB000AAA65 /* ListJacksonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListJacksonVC.m; sourceTree = "<group>"; };
+		F20AED1E1FC346E1000AAA65 /* WebServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
+		F20AED1F1FC346E1000AAA65 /* WebServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
+		F20AED231FC34914000AAA65 /* ArtistModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistModel.h; sourceTree = "<group>"; };
+		F20AED241FC34914000AAA65 /* ArtistModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistModel.m; sourceTree = "<group>"; };
+		F20AED331FC34D14000AAA65 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
+		F20AED341FC34D14000AAA65 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
+		F20AED351FC34D14000AAA65 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		FBFC93F1B765D9992B9FBADC /* Pods-eJackson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eJackson.release.xcconfig"; path = "Pods/Target Support Files/Pods-eJackson/Pods-eJackson.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6FB1B1A6B1F0104F78BEAE /* libPods-eJackson.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36DDD4EBCA862DEC1883865D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACDFD80BEAC971E73AAFFC6B /* Pods-eJackson.debug.xcconfig */,
+				FBFC93F1B765D9992B9FBADC /* Pods-eJackson.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F20AECF11FC328B6000AAA65 = {
 			isa = PBXGroup;
 			children = (
 				F20AECFC1FC328B6000AAA65 /* eJackson */,
 				F20AECFB1FC328B6000AAA65 /* Products */,
+				36DDD4EBCA862DEC1883865D /* Pods */,
+				F5D11574F1B38D9ABAA96041 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,10 +88,13 @@
 		F20AECFC1FC328B6000AAA65 /* eJackson */ = {
 			isa = PBXGroup;
 			children = (
+				F20AED311FC34D14000AAA65 /* Cells */,
 				F20AED0B1FC328B6000AAA65 /* Info.plist */,
 				F20AED141FC329BE000AAA65 /* Controllers */,
 				F20AED131FC3295D000AAA65 /* Main */,
 				F20AED161FC329DE000AAA65 /* Media */,
+				F20AED221FC348E0000AAA65 /* Models */,
+				F20AED1D1FC3312B000AAA65 /* Services */,
 				F20AED151FC329CC000AAA65 /* Storyboards */,
 			);
 			path = eJackson;
@@ -108,6 +138,50 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
+		F20AED1D1FC3312B000AAA65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F20AED1E1FC346E1000AAA65 /* WebServices.h */,
+				F20AED1F1FC346E1000AAA65 /* WebServices.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F20AED221FC348E0000AAA65 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F20AED231FC34914000AAA65 /* ArtistModel.h */,
+				F20AED241FC34914000AAA65 /* ArtistModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F20AED311FC34D14000AAA65 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F20AED321FC34D14000AAA65 /* CardCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F20AED321FC34D14000AAA65 /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				F20AED331FC34D14000AAA65 /* CardCell.h */,
+				F20AED341FC34D14000AAA65 /* CardCell.m */,
+				F20AED351FC34D14000AAA65 /* CardCell.xib */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		F5D11574F1B38D9ABAA96041 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68FBF86D19B6C66119CF1D9E /* libPods-eJackson.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F20AED101FC328B6000AAA65 /* Build configuration list for PBXNativeTarget "eJackson" */;
 			buildPhases = (
+				DB45C92E502D4E6BE7ABF022 /* [CP] Check Pods Manifest.lock */,
 				F20AECF61FC328B6000AAA65 /* Sources */,
 				F20AECF71FC328B6000AAA65 /* Frameworks */,
 				F20AECF81FC328B6000AAA65 /* Resources */,
+				C893EEAA4D883922F01D2FCC /* [CP] Embed Pods Frameworks */,
+				87CD1C0AF971007DE8495CEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,17 +246,72 @@
 				F20AED0A1FC328B6000AAA65 /* LaunchScreen.storyboard in Resources */,
 				F20AED071FC328B6000AAA65 /* Assets.xcassets in Resources */,
 				F20AED051FC328B6000AAA65 /* Main.storyboard in Resources */,
+				F20AED371FC34D14000AAA65 /* CardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87CD1C0AF971007DE8495CEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eJackson/Pods-eJackson-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C893EEAA4D883922F01D2FCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eJackson/Pods-eJackson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB45C92E502D4E6BE7ABF022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eJackson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F20AECF61FC328B6000AAA65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20AED251FC34914000AAA65 /* ArtistModel.m in Sources */,
+				F20AED361FC34D14000AAA65 /* CardCell.m in Sources */,
 				F20AED1C1FC32DBB000AAA65 /* ListJacksonVC.m in Sources */,
+				F20AED201FC346E1000AAA65 /* WebServices.m in Sources */,
 				F20AED191FC32AE9000AAA65 /* Start.m in Sources */,
 				F20AED0D1FC328B6000AAA65 /* main.m in Sources */,
 				F20AECFF1FC328B6000AAA65 /* AppDelegate.m in Sources */,
@@ -314,6 +446,7 @@
 		};
 		F20AED111FC328B6000AAA65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDFD80BEAC971E73AAFFC6B /* Pods-eJackson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +461,7 @@
 		};
 		F20AED121FC328B6000AAA65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFC93F1B765D9992B9FBADC /* Pods-eJackson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

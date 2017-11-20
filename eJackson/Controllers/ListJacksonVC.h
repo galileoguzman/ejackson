@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListJacksonVC : UIViewController
+#import "WebServices.h"
+
+#import "ArtistModel.h"
+#import "CardCell.h"
+
+@interface ListJacksonVC : UIViewController<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tblContent;
 
 @end
