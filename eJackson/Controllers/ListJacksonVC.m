@@ -1,29 +1,25 @@
 //
-//  ViewController.m
+//  ListJacksonVC.m
 //  eJackson
 //
 //  Created by Galileo Guzman on 11/20/17.
 //  Copyright © 2017 Galileo Guzman. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ListJacksonVC.h"
 
-@interface ViewController ()
+@interface ListJacksonVC ()
 
 @end
 
-@implementation ViewController
+@implementation ListJacksonVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 @end

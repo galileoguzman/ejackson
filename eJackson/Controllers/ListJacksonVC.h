@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ListJacksonVC.h
 //  eJackson
 //
 //  Created by Galileo Guzman on 11/20/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ListJacksonVC : UIViewController
 
 @end
-
