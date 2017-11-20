@@ -143,17 +143,12 @@
         [tableView registerNib:[UINib nibWithNibName:@"CardCell" bundle:nil] forCellReuseIdentifier:CellIdentifier];
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     }
-    
-    
-    
     ArtistModel *p = [ArtistModel alloc];
     p = self.songs[indexPath.row];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // retrive image on global queue
         UIImage * img = [UIImage imageWithData:[NSData dataWithContentsOfURL:     [NSURL URLWithString:p.artworkUrl100]]];
-        NSLog(@"Artist url image %@", p.artworkUrl60);
-        
         dispatch_async(dispatch_get_main_queue(), ^{
             // assign cell image on main thread
             cell.imgNew.image = img;

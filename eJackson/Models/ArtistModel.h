@@ -14,10 +14,8 @@
 @interface ArtistModel : JSONModel
 @property (nonatomic, strong) NSString* kind;
 @property (nonatomic, strong) NSString* artistName;
-//@property (nonatomic, strong) NSString* collectionName;
-//@property (nonatomic, strong) NSString* collectionCensoredName;
 @property (nonatomic, strong) NSString* trackCensoredName;
-//@property (nonatomic, strong) NSString* artistViewUrl;
+@property (nonatomic, strong) NSString* previewUrl;
 @property (nonatomic, strong) NSString* artworkUrl30;
 @property (nonatomic, strong) NSString* artworkUrl60;
 @property (nonatomic, strong) NSString* artworkUrl100;

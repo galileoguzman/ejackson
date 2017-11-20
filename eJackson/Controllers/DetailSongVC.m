@@ -38,4 +38,10 @@
     });
 }
 
+- (IBAction)btnPlayPressed:(id)sender {
+    NSURL* urlPreview = [NSURL URLWithString:self.song.previewUrl];
+    [[UIApplication sharedApplication] openURL:urlPreview options:@{} completionHandler:^(BOOL success) {
+        // playing url
+    }];
+}
 @end

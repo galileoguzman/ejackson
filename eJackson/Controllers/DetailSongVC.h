@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgSong;
 @property (weak, nonatomic) IBOutlet UILabel *lblArtist;
 @property (weak, nonatomic) IBOutlet UILabel *lblSong;
+- (IBAction)btnPlayPressed:(id)sender;
 
 
 @end

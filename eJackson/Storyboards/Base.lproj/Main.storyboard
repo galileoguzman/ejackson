@@ -118,7 +118,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YLE-ic-Sm0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1ZT-0G-KNW"/>
+                    <navigationItem key="navigationItem" id="1ZT-0G-KNW">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="play" id="Tch-Pc-813">
+                            <connections>
+                                <action selector="btnPlayPressed:" destination="rzZ-mU-vNZ" id="xmD-la-isJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imgSong" destination="pFs-3o-xIl" id="tr6-AO-TRa"/>
                         <outlet property="lblArtist" destination="008-i3-ocH" id="BsS-VR-odK"/>

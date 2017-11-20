@@ -88,8 +88,8 @@
 		F20AECFC1FC328B6000AAA65 /* eJackson */ = {
 			isa = PBXGroup;
 			children = (
-				F20AED311FC34D14000AAA65 /* Cells */,
 				F20AED0B1FC328B6000AAA65 /* Info.plist */,
+				F20AED311FC34D14000AAA65 /* Cells */,
 				F20AED141FC329BE000AAA65 /* Controllers */,
 				F20AED131FC3295D000AAA65 /* Main */,
 				F20AED161FC329DE000AAA65 /* Media */,
